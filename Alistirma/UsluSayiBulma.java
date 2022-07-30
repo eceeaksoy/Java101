@@ -12,10 +12,13 @@ public class UsluSayiBulma {
         k = keyboard.nextInt();
 
         int i = 1;
-        while (i <= k)
+        if (k!=0)
         {
-            tot *= n;
-            i++;
+            while (i <= k)
+            {
+                tot *= n;
+                i++;
+            }
         }
 
         System.out.println(n + "^" + k + " = " + tot);
