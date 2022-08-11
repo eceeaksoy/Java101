@@ -1,5 +1,3 @@
-package Odev;
-
 public class AsalSayilariBulanProgram {
     public static void main(String[] args) {
         int sayac = 0;
