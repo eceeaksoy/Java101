@@ -1,5 +1,3 @@
-package Odev;
-
 import java.util.Scanner;
 
 public class ArtikYilHesaplama {
