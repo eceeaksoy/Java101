@@ -47,12 +47,12 @@ public class MineSweeper {
         {
             int randomRow = (int)(Math.random() * this.row);
             int randomColumn = (int)(Math.random() * this.column);
-            if (this.arr[randomRow][randomColumn] != "* ")
+            if (this.answer[randomRow][randomColumn] != "* ")
             {
                 this.answer[randomRow][randomColumn] = "* ";
                 this.answer2[randomRow][randomColumn] = "* ";
+                mine--;
             }
-            mine--;
         }
     }
 
