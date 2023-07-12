@@ -65,13 +65,13 @@ public class MineSweeper {
             int n = keyboard.nextInt();
             System.out.print("Enter a column: ");
             int m = keyboard.nextInt();
-            if (((n >= this.row) || (n < 0)) || ((m >= this.column) || (m < 0)))
+            if (((n > this.row) || (n < 1)) || ((m > this.column) || (m < 1)))
             {
                 System.out.println("You enter wrong value!");
                 System.out.println("==================");
                 continue;
             }
-            if (this.answer[n][m].equals("* "))
+            if (this.answer[n-1][m-1].equals("* "))
             {
                 play = false;
                 System.out.println("Game over! You lost!");
@@ -79,9 +79,9 @@ public class MineSweeper {
                 printMap(this.answer);
                 System.out.println("=======END========");
             }
-            else if (!this.answer[n][m].equals("* "))
+            else if (!this.answer[n-1][m-1].equals("* "))
             {
-                gameTime(n,m);
+                gameTime(n-1,m-1);
                 printMap(this.arr);
                 System.out.println("==================");
             }
